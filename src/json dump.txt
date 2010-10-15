@@ -1,0 +1,310 @@
+venue detail for this place: 
+{u'city': u'New York',
+ u'stats': 
+{u'beenhere': 
+  {u'me': False},
+ u'checkins': 364,
+ u'herenow': u'0',
+ u'mayor': 
+  {u'count': 2,
+ u'user': 
+  {u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/ZMTTIZPVKFOUKKXE.jpg',
+ u'firstname': u'Christian',
+ u'lastname': u'W.',
+ u'homecity': u'Islington,
+ London',
+ u'gender': u'male',
+ u'id': 67407}
+}
+}, #end of stats
+ u'verified': False,
+ u'name': u"Sammy's Roumanian Steakhouse",
+ u'zip': u'10002',
+ u'short_url': u'http://4sq.com/6Xogfa',
+ u'hasTodo': u'false',
+ u'geolong': -73.993043999999998,
+ u'id': 1792,
+ 
+u'specials': \n[
+        {u'venue': 
+        {u'primarycategory': 
+        {u'iconurl': u'http://foursquare.com/img/categories/shops/salon_barber.png',
+       u'fullpathname': u'Shops:Salon / Barbershop',
+       u'id': 79248,
+       u'nodename': u'Salon / Barbershop'},
+       u'id': 48696,
+       u'name': u'The New York Shaving Company'},
+       u'kind': u'nearby',
+       u'message': u'Sign up today for our FREE Preferred Customer Program. \r\nEvery Six service is FREE!',
+       u'type': u'frequency',
+       u'id': 48696},
+       
+        {u'venue': 
+        {u'primarycategory': 
+        {u'iconurl': u'http://foursquare.com/img/categories/arts_entertainment/default.png',
+       u'fullpathname': u'Arts & Entertainment:Performing Arts:Indie / Off Broadway',
+       u'id': 78985,
+       u'nodename': u'Indie / Off Broadway'},
+       u'id': 47553,
+       u'name': u'Dixon Place'},
+       u'kind': u'nearby',
+       u'message': u'Check in our cozy Dixon Place Lounge and get one round of 2for1 drinks all night in October! Now serving special Autumn cocktails.',
+       u'type': u'frequency',
+       u'id': 47553},
+       
+        {u'venue': 
+        {u'primarycategory': 
+        {u'iconurl': u'http://foursquare.com/img/categories/shops/apparel.png',
+       u'fullpathname': u'Shops:Apparel:Boutique',
+       u'id': 79209,
+       u'nodename': u'Boutique'},
+       u'id': 86377,
+       u'name': u'JF & Son'},
+       u'kind': u'nearby',
+       u'message': u'10% off an item on your 5th check-in!',
+       u'type': u'count',
+       u'id': 86377},
+       
+        {u'venue': 
+        {u'primarycategory': 
+        {u'iconurl': u'http://foursquare.com/img/categories/nightlife/musicvenue_rockclub.png',
+       u'fullpathname': u'Nightlife:Music Venue:Rock Club',
+       u'id': 79167,
+       u'nodename': u'Rock Club'},
+       u'id': 17650,
+       u'name': u'Crash Mansion'},
+       u'kind': u'nearby',
+       u'message': u'2 for 1 Svedka cocktails for anyone who checks in and shows the bartender. The mayor receives a free shot of Jameson on Friday night.',
+       u'type': u'frequency',
+       u'id': 17650}],
+ 
+u'phone': u'2126730330',
+ u'state': u'NY',
+             u'categories': \n
+            [
+            {u'iconurl': u'http://foursquare.com/img/categories/food/default.png',
+             u'fullpathname': u'Food:Eastern European',
+             u'id': 79058,
+             u'nodename': u'Eastern European'},
+             
+            {u'iconurl': u'http://foursquare.com/img/categories/food/default.png',
+             u'fullpathname': u'Food:American',
+             u'id': 79039,
+             u'nodename': u'American'}],
+             u'crossstreet': u'at Delancy',
+             u'address': u'157 Chrystie St',
+             u'geolat': 40.720491000000003,
+ u'tips': \n
+[
+{u'text': u'They hAve alka selter at the door for a reason.... Use it',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/DOGTUBO3QSGZKZNU.jpg',
+ u'firstname': u'Richard',
+ u'lastname': u'B.',
+ u'homecity': u'Forest Hills,
+ NY',
+ u'gender': u'male',
+ u'id': 541388},
+ u'stats': 
+{u'donecount': 2,
+ u'todocount': 0},
+ u'id': 589820,
+ u'created': u'Sun,
+ 28 Mar 10 16:54:09 +0000'},
+ 
+{u'text': u'Schmaltz!!',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/0DYXZSTNZM2YDAZI.jpg',
+ u'firstname': u'Curt',
+ u'lastname': u'K.',
+ u'homecity': u'Montauk,
+ New York',
+ u'gender': u'male',
+ u'id': 85639},
+ u'stats': 
+{u'donecount': 2,
+ u'todocount': 0},
+ u'id': 365639,
+ u'created': u'Mon,
+ 22 Feb 10 14:29:39 +0000'},
+ 
+{u'text': u'Go to Sammy\'s Roumanian Steakhouse and grab the lovely lady in the table next to you to dance to "Uptown Girl." If she doesn\'t kiss you reward yourself with a shot of vodka',
+ u'user': 
+{u'photo': u'http://foursquare.com/img/blank_boy.png',
+ u'firstname': u'Fabiano',
+ u'lastname': u'R.',
+ u'homecity': u'New York,
+ NY',
+ u'gender': u'male',
+ u'id': 5581},
+ u'stats': 
+{u'donecount': 2,
+ u'todocount': 1},
+ u'id': 3080,
+ u'created': u'Wed,
+ 18 Mar 09 00:20:36 +0000'},
+ 
+{u'text': u"Get ready to eat! The servings are huge. The waitstaff are great and willing to give their recommendations. Get a t-shirt to remember your evening by! You'll need a size larger then when you came :)",
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/QFIK4011PXKUPMF0.jpg',
+ u'firstname': u'Elizabeth',
+ u'lastname': u'K.',
+ u'homecity': u'New York,
+ NY',
+ u'gender': u'female',
+ u'id': 1111870},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 2017714,
+ u'created': u'Tue,
+ 10 Aug 10 02:53:09 +0000'},
+ 
+{u'text': u"There's a fat guy named george in here stuffing his fat face!",
+ u'user': 
+{u'homecity': u'Brooklyn,
+ NY',
+ u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/2LNXQXQEUPZZM0KY.jpg',
+ u'id': 301930,
+ u'firstname': u'eric',
+ u'gender': u'male'},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 1739337,
+ u'created': u'Thu,
+ 22 Jul 10 01:00:37 +0000'},
+ 
+{u'text': u"There's a fat guy named george stuffing his face in here!",
+ u'user': 
+{u'homecity': u'Brooklyn,
+ NY',
+ u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/2LNXQXQEUPZZM0KY.jpg',
+ u'id': 301930,
+ u'firstname': u'eric',
+ u'gender': u'male'},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 1739291,
+ u'created': u'Thu,
+ 22 Jul 10 00:57:03 +0000'},
+ 
+{u'text': u'THE BEST STEAK',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/H5EHUM3GVSK05TQQ.jpg',
+ u'firstname': u'lizardie serrano',
+ u'lastname': u's.',
+ u'homecity': u'New York,
+ NY',
+ u'gender': u'male',
+ u'id': 1973669},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 1565474,
+ u'created': u'Thu,
+ 08 Jul 10 22:26:36 +0000'},
+ 
+{u'text': u'The Romanian steak is wonderful',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/TQATJJLSKXIJD1PH.jpg',
+ u'firstname': u'Rogel',
+ u'lastname': u'S.',
+ u'homecity': u'Incline village,
+ Nevada',
+ u'gender': u'male',
+ u'id': 86988},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 909842,
+ u'created': u'Thu,
+ 06 May 10 12:15:27 +0000'},
+ 
+{u'text': u'Jewish comfort food with a lot of kitsch. The chopped liver and the egg creams are delicious.',
+ u'user': 
+{u'homecity': u'Manhattan,
+ New York',
+ u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/-1_1258038350214.jpg',
+ u'id': 95423,
+ u'firstname': u'The Corcoran Group',
+ u'gender': u'male'},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 5},
+ u'id': 846015,
+ u'created': u'Thu,
+ 29 Apr 10 01:45:42 +0000'},
+ 
+{u'text': u'Another fun thing: have the egg cream. The waiter makes it in front of you; chocolate syrup and seltzer and all over the table is a great way to end your dinner. :)',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/22PPU3OGH40FOGY2.jpg',
+ u'firstname': u'Catharine',
+ u'lastname': u'M.',
+ u'homecity': u'Greater Vancouver Regional Dis,
+ BC',
+ u'gender': u'female',
+ u'id': 545148},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 1},
+ u'id': 597910,
+ u'created': u'Mon,
+ 29 Mar 10 17:53:43 +0000'},
+ 
+{u'text': u'Order the chopped liver and watch the waitstaff make it fresh at your table!',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/22PPU3OGH40FOGY2.jpg',
+ u'firstname': u'Catharine',
+ u'lastname': u'M.',
+ u'homecity': u'Greater Vancouver Regional Dis,
+ BC',
+ u'gender': u'female',
+ u'id': 545148},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 1},
+ u'id': 597898,
+ u'created': u'Mon,
+ 29 Mar 10 17:51:39 +0000'},
+ 
+{u'text': u'Schmaltz!!!!',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/0DYXZSTNZM2YDAZI.jpg',
+ u'firstname': u'Curt',
+ u'lastname': u'K.',
+ u'homecity': u'Montauk,
+ New York',
+ u'gender': u'male',
+ u'id': 85639},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 357965,
+ u'created': u'Sun,
+ 21 Feb 10 00:39:50 +0000'},
+ 
+{u'text': u'Order the full bottle of vodka for your table. Trust me,
+ you WILL end up drinking it all!',
+ u'user': 
+{u'photo': u'http://playfoursquare.s3.amazonaws.com/userpix_thumbs/7482_1238596737.jpg',
+ u'firstname': u'Katie',
+ u'lastname': u'P.',
+ u'homecity': u'New York,
+ NY',
+ u'gender': u'female',
+ u'id': 7482},
+ u'stats': 
+{u'donecount': 1,
+ u'todocount': 0},
+ u'id': 222137,
+ u'created': u'Mon,
+ 25 Jan 10 15:02:54 +0000'}],
+ u'primarycategory': 
+{u'iconurl': u'http://foursquare.com/img/categories/food/default.png',
+ u'fullpathname': u'Food:Eastern European',
+ u'id': 79058,
+ u'nodename': u'Eastern European'},
+ u'todos': \n
+[]} 

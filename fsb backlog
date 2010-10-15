@@ -1,0 +1,90 @@
+FS Battle - Epics and Features
+
+Checkin
+  fs integration
+  loot hook
+  battle hook
+
+Register
+  create fsb account
+  connect to fs account
+  import fs data
+    checkins
+    badges
+    friends (match w/ fsb friends, invite to fsb)
+  character creation
+    class?
+    initialize stats, equipment
+    view stats
+  next steps
+    battle
+
+Shop
+  item selection
+  buy
+  sell
+  inventory
+
+Battle
+  turn based, scripted
+  real time
+  raids and duels
+  
+Loot
+  basic items and gold
+  magic items
+  super items
+  embeddables
+  consumables
+  quest items?
+  
+Quests
+  later
+
+Character
+  health and mana adjustment
+  exp
+  stats
+  powers
+    power design and attributes
+
+Classes
+  
+
+FSB Sprint 1
+x  Register
+x    create fsb account
+x      rough html home page - Done.  ugly but done.
+x      link to reg - openID - skip for now, come back later
+x      link to "save and connect to FS" - verify it can do initial call
+x        record token in user prefs record
+x        verify that logout/login retains fs account, can call api
+x        verify logout disconnects from api?
+    import fs data
+      checkins
+        use batch based flow already in mapper
+          in the for each, parse out venues for below
+        need venue history - each user gets a record indicating each unique venue they've been to. 3 tables - user, u-v, venue(?).
+          this drives accessibility of battle locations.  like teleporting to your history.
+        record last update? if the user uses both FS and FSB, FS could have checkins that havent yet been added to FSB.  
+        no reward for these - dont want to headstart people past the fast and fun part of the treadmill
+      badges
+        just record them for now - badge table, and u-b table?
+        later, give some sort of non-functional benefit to these?  styled clothes, teleportation, auto-sale of junk
+      friends - match w/ fsb friends
+        if my fs friends also have fsb, present them in a list, with the option to request their friendship
+        later include the ability to request your fs friends join fsb - "X wants to battle you.  They said - 'Rarrrrgh'" 
+        this same flow happens in the iphone app as well.
+    character creation
+      initialize stats
+      view stats
+    api-ify the app engine app so it can respond to iphone app
+      add an api controller that responds with xml to valid urls like /api/checkin, /api/battle, /api/friend
+      
+Other stuff - 
+  refactor file structure so its less scroll-y
+
+FSB Sprint 2 tentative
+  gameify
+    basic battle - attack a place, drain health, stamina, etc, on minions, then turn based boss battle
+    loot and exp reward

@@ -1,0 +1,28 @@
+MetaOptimize is hiring contractors for exciting project work building real-world NLP + ML systems.
+This is for remote, short-term gigs. You can set your hours. The only requirement is that you kick ass and add value from day one.
+We are looking for generalists:
+* Hardcore programmers who learn new technologies and APIs quickly.
+* Experienced sysadmins, especially who have experience with AWS and EC2.
+And also specialists:
+* People with backgrounds in machine learning, natural language processing, information retrieval, and/or search. Medium experience is fine, you don't have to have a PhD.
+* Python/Django programmers
+* Java programmers
+Email your resume and/or github URL to joseph at metaoptimize dot com
+
+wednesday nytimes hack day
+
+Newco, stealth mode well-funded NYC startup with lots of runway. Huge opportunity to join a small team building a very busy gamechanging consumer Web app. Hiring several developers. No legacy code- build this from scratch with us! RoR/jQuery front end, Scala for the heavy lifting and API.
+Please email Andy Parsons, andy@obikosh.com
+
+NYC, EnergyScoreCards.com is hiring. We are in the hot energy efficiency / cleantech space, helping measure large buildings measure their energy use. We are looking for:
+Developers (grails / java, but anybody with sharp skills would be considered).
+Product manager to help work on new features, somebody with good visual sense.
+Account manager - we sell to real estate portfolios and state agencies and need to manage those relationships.
+UX person on a freelance basis, especially with experience in data visualization.
+Bonus skills are experience in real estate market (residential multi-family or commercial), or background in energy efficiency / energy audits / building science, etc.
+email: jean at energyscorecards dot com
+
+catchafire.org
+
+nyc big apps competition - nycbigapps.com
+january 12
