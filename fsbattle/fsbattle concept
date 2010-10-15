@@ -1,0 +1,109 @@
+FSBattle Concept
+
+Users checkins and badges on foursquare unlock additional powers, experience, gear in the battle game.
+
+Experience and treasure treadmills
+
+New places valued more than existing places
+
+Places with more people more valuable
+
+Checkins perform several unlocks
+- treasure drop
+- experience
+- dungeon unlock
+- duel opponents
+
+Goal is to make combat decision based and strategic, without being time consuming.  Three approaches.
+1. Randomized, scripted AI battles - the user can challenge a dungeon (venue), and must overcome a battle based on their skills.  Perhaps the dungeon has a level, and that level impacts resources available once they reach the boss.  On the boss, the user selects 3 combat moves in sequence, and sees the result, the enemy's reaction, and then selects the next move.  If successful, they are granted more treasure.  If desired, they can postpone this quick battle in favor of the other options, or come back to this option later.
+2. Appointment based group battles - user indicates several times they can do a raid, system matches the user to at least 2 other players, and all login from web client for a 5-10 min dungeon raid.  May include all users who have previously unlocked the location.  MUST include reasonable chat functionality. Should include several default dungeons that all users have access to on an ad hoc basis.  May include something like declaring "general availability", meaning user is in the system, and available for matchmaking.
+3. Multi-modal duels - user can challenge another user in the same location, or who is a friend, to a duel.  Challenged user has preferences set about their mode of response.  Options:
+  a. scripted - challenged user has set up their 3 combat moves, which will be executed on their behalf.
+  b. turn based - each user gets 1 hr (longer? less?) to respond to the previous move.  If no response, the system will use the scripted plan.  Perhaps scripted is not necessary, and this mode is always used.
+  c. realtime - challenger indicates several windows of availability to duel from webclient.  Challenged can accept a time, or reject.  On accept, both users must be online at the same time in a 10 minute window.  If either user fails to appear, that user loses the duel.  If they show, clickfest ensues.  On rejection, the system falls back to turn based.  Users can set preference to always reject for realtime duels, in which casee this option is unavailable for challenger.
+4. Battle Royale? - like an appointment based group battle, but PVP.
+
+Level matching - 3 options - 
+1. call of duty - users get interesting addons that don't strongly impact their ability to perform
+2. WoW/Diablo - users ability is strongly tied to their level, and must be nearby to allow them to play together
+3. Autoadjust - users ability is strongly tied, but an adjustment algorithm exists to ramp up damage, health, etc, when they join out of range parties.  Notably, they should not be granted advanced powers, just very strong versions of current powers.  In a duel, they should lose many times due to lack of sophisticated responses.  Power level should be boosted to n-1 of their target, so they are still the weakest of the party.
+
+Dungeon generation
+
+Should key off the type of venue from FS.  1 to 1 mapping with some fantasy tropes.  Utilize my "cool places to fight" guide on obsidian portal for mapping, and on first access by FSBattle, randomly apply a sphere or power source, and a level within 3 of the user's level.  Also add a boss monster?
+
+Quests
+
+Story generation might be hard here, but could be of the form "find <evil dude>'s <place type> and destroy it" or "capture <evil dude>'s <item> from his <place type>".  Evil dude would have a particular power type, so the user would have to find a nearby place type that was already assigned that power type, or would have to try undiscovered instances of that place type until they found it.  Flavor could be "this place emanates tremendous power" or "evil beings are continually coming and going in this area" or "great noise and heat are in this area, indicating a diabolical factory", etc.
+
+Fetch and return quests
+Rescue quest
+See again quest ideas from DnD wiki
+
+
+Equipment
+
+Standard fantasy stuff here. Various armor slots, weapon slots, rings, amulet.  Drop system should be a blatant copy of diablo's, with a boosts for real world factors, like popularity of the place, special at the place, mayorship, etc.
+
+Battle System
+
+3 main resources - health, mana, speed.  In real-time, speed is not explicitly shown, but is manifested in frame rate.  In turn based, the user has essentially enough framerate for 4 standard moves, but can use 3 moves, so they should use some special moves.
+
+Basic Moves
+
+Melee Attack
+Magic Attack
+Ranged Attack
+Block
+
+Fancy Moves
+
+Powers from diablo, WoW, etc, flavored by class
+
+
+Other neato features
+
+Crafting
+Auctions
+Trading
+
+Character Stats
+
+4 from diablo - 
+Str
+Con
+Dex
+Int
+
+Derived stats from those
+
+Experience
+Gold
+Class?
+Race?
+Name
+Powers
+Talents/Perks/Feats - perks and feats are more fun, because theyre more general.
+
+Leveling - 
+Needs to be frequent. Mafia Wars levels you 4 times in your first session.  Diablo it takes about 10 mins, max. DnD takes weeks, and mainly grants new powers.
+
+DnD race is an important selection, because of racial powers and feats.  You become more good at your race as you level.  Its also much more tied to identity in DnD.
+
+Other metaphors for battle/acheivement
+Mafia
+Soldier
+Spore creatures
+Farm - solely single player, no way to compete
+RTS - build a town and conquer - equal experience, almost, with computers and humans
+Sports - equal experience
+Racing - equal
+Fighting - equal
+MTG - equal
+
+Duels vs. Grinds
+Challenge vs. Walk
+
+
+
+

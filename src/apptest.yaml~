@@ -1,0 +1,27 @@
+application: 4mapper
+version: r14
+runtime: python
+api_version: 1
+
+handlers:
+- url: /admin
+  script: main_test.py
+  login: admin
+
+- url: /static
+  static_dir: static
+
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+
+- url: /remote_api
+  script: /home/derek/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: /.*
+  script: main_test.py
+  
+- url: /_ah/login_required
+  script: do_openid_login.py
+
