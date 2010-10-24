@@ -24,7 +24,7 @@ from google.appengine.api import users as gaeusers
 
 import oauth
 import gmemsess
-import foursquare
+import fsmock as foursquare
 
 
 class Badges(db.Model):

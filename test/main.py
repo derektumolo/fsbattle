@@ -85,7 +85,30 @@ class ItemType(db.Model):
 # item types.  weapons, armor, rings, etc
   name = db.StringProperty()
   
+def generate_treasure(level)
+  player = get_player()
   
+  score += int(level + random.randint(1,10)) * (player.level ^ 1.2))
+  
+  # determine what the reward is.  
+  # option 1 - nothing.  rare.
+  # option 2 - gold
+  # option 3 - items
+  option = random.randint(1,5)
+  if (option == 1)
+    return "no loot";
+  else if (option >= 4)
+    #items
+    
+    #select equipment, count of equipment
+    #give the player a random piece of equipment, and return
+    selection = random.randint(1,6)
+    return "equipment";
+  else
+    #gold
+    return 
+    
+
 # initial reg only gives you a user.  is it even stored?
 # on connect to foursquare, check the user does not already have an FSB account.  if yes, error, and prompt to auth with a different account,
 #   or use a different openid.
@@ -249,6 +272,7 @@ class Checkin(webapp.RequestHandler):
         gold += int(random.randint(1,10) * (player.level ** 1.2))
         
       self.response.out.write("You got %i gold for checking in here. </br>" % gold)
+      
       
       
       #from the api docs:
@@ -462,9 +486,7 @@ Example usage:
 {'user': {'city': {'geolat': 34.0443, 'name': 'Los Angeles', ...}}}
 """
 #if __name__ == "__main__":
-#  main()
-  
-# def generate_treasure
+#  main()  
 
 # def battle(attacker, defender)
 # battle constructor?

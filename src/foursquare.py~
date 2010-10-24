@@ -1,5 +1,8 @@
-#mock foursquare api.  returns canned json for now
-#maybe later I'll improve it to return randomized info.
+"""
+Foursquare API Python module
+by John Wiseman <jjwiseman@gmail.com>
+some edits and debuggery by Derek Tumolo <djtumolo@gmail.com>
+"""
 
 import httplib
 import urllib
@@ -9,6 +12,9 @@ import logging
 import base64
 
 import oauth
+
+from google.appengine.ext import db
+#TODO - refactor this ^ so the db stuff happens in main
 
 try:
     # Python 2.6?
@@ -22,6 +28,11 @@ except ImportError:
         # Have django or are running in the Google App Engine?
         from django.utils import simplejson
 
+#debug = true
+
+class dump(db.Model):
+  method = db.StringProperty()
+  response = db.TextProperty()
 
 # General API setup
 API_PROTOCOL = 'http'
@@ -393,6 +404,11 @@ class Foursquare:
         # checks here, but as all the aggregators are being built in
         # __init__(), we actually don't need to: Python handles it for
         # us.
+        
+        #if debug:
+        #  dump = open(method)
+        #  return dump.readlines()
+          
         meta = FOURSQUARE_METHODS[method]
 
         if meta['auth_required'] and (not self.credentials or not self.credentials.authorized()):
@@ -452,8 +468,7 @@ class Foursquare:
             server = meta['server']
             
         if meta['http_method'] == 'POST':
-            
-            #response = self.fetch_response(server, meta['http_method'],
+            response = self.fetch_response(server, meta['http_method'],
                                            cred_url,
                                            body=cred_args,
                                            headers=cred_headers)
@@ -461,6 +476,10 @@ class Foursquare:
             response = self.fetch_response(server, meta['http_method'],
                                            cred_url,
                                            headers=cred_headers)
+        
+        # export the response to the db so that we can use it when offline
+        #if generator:
+        dump(method=method, response=response).put()
         
         # Method returns nothing, but finished fine
         # Return the oauth token

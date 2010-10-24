@@ -1,11 +1,14 @@
-application: 4mapper
+application: fsbattle
 version: r14
 runtime: python
 api_version: 1
 
+builtin:
+- remote_api: on
+
 handlers:
 - url: /admin
-  script: main_test.py
+  script: main.py
   login: admin
 
 - url: /static
@@ -20,8 +23,7 @@ handlers:
   login: admin
 
 - url: /.*
-  script: main_test.py
+  script: main.py
   
 - url: /_ah/login_required
   script: do_openid_login.py
-

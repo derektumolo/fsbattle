@@ -13,6 +13,9 @@ import base64
 
 import oauth
 
+from google.appengine.ext import db
+#TODO - refactor this ^ so the db stuff happens in main
+
 try:
     # Python 2.6?
     import json
@@ -26,6 +29,11 @@ except ImportError:
         from django.utils import simplejson
 
 #debug = true
+
+class dump(db.Model):
+  method = db.StringProperty()
+  response = db.TextProperty()
+
 # General API setup
 API_PROTOCOL = 'http'
 API_SERVER   = 'api.foursquare.com'
@@ -397,9 +405,12 @@ class Foursquare:
         # __init__(), we actually don't need to: Python handles it for
         # us.
         
-        if debug:
-          dump = open(method)
-          return dump.readlines()
+        # if we're offline, or testing, return something from the db instead.
+        # TODO - make this work, and randomly select
+        # TODO - figure out how to do unit testing.
+        #if debug:
+        #  dump = open(method)
+        #  return dump.readlines()
           
         meta = FOURSQUARE_METHODS[method]
 
@@ -469,18 +480,9 @@ class Foursquare:
                                            cred_url,
                                            headers=cred_headers)
         
-        # if generator:
-        ls = os.listdir(os.getcwd())
-        if method in ls:
-          i=0
-          #while (method + i) in ls
-          #  i++
-          dump = open((method + i),'w')
-        else:
-          dump = open(method,'w')
-          
-        dump.write(response)
-        dump.close
+        # export the response to the db so that we can use it when offline
+        #if generator:
+        dump(method=method, response=response).put()
         
         # Method returns nothing, but finished fine
         # Return the oauth token
