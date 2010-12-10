@@ -14,6 +14,7 @@ import base64
 import oauth
 
 from google.appengine.ext import db
+import random
 #TODO - refactor this ^ so the db stuff happens in main
 
 try:
@@ -28,7 +29,9 @@ except ImportError:
         # Have django or are running in the Google App Engine?
         from django.utils import simplejson
 
-#debug = true
+#DEBUG/GENERATE MOCK
+debug = False
+generate = False
 
 class dump(db.Model):
   method = db.StringProperty()
@@ -408,9 +411,17 @@ class Foursquare:
         # if we're offline, or testing, return something from the db instead.
         # TODO - make this work, and randomly select
         # TODO - figure out how to do unit testing.
-        #if debug:
-        #  dump = open(method)
-        #  return dump.readlines()
+        if debug:
+          query = db.GqlQuery("SELECT * FROM dump WHERE method = :pmethod ",
+                    pmethod = method)
+          results = query.fetch(10)
+          
+          # select one of the results, and get the response field.
+          logging.info('results length: %i' % (len(results)))
+          #response = results[int(random.randint(1,len(results)))].response
+          #logging.debug('response: %s' % (response))
+          return False;
+          #return simplejson.loads(response)
           
         meta = FOURSQUARE_METHODS[method]
 

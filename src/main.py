@@ -160,7 +160,7 @@ class Login(webapp.RequestHandler):
         if user:
             player = get_player()
             if player:
-              greeting = ("Welcome back, %s. <img src = %s> </br><a href='/venues'>Check In</a></br><a href='/equip'>Add equipment mock data</a></br>(<a href=\"%s\">sign out</a>)" % (player.name, player.picture, gaeusers.create_logout_url("/login")))
+				greeting = ("Welcome back, %s. <img src = %s> </br><a href='/venues'>Check In</a></br><a href='/equip'>Add equipment mock data</a></br><a href='\import'>Find friends</a></br>(<a href=\"%s\">sign out</a>)" % (player.name, player.picture, gaeusers.create_logout_url("/login")))
             else:
               greeting = ("Welcome, %s! </br> <a href='/authorize'>Connect to Foursquare!</a></br>(<a href=\"%s\">sign out</a>)" %
                         (user.nickname(), gaeusers.create_logout_url("/login")))
@@ -173,6 +173,38 @@ class Login(webapp.RequestHandler):
                         gaeusers.create_login_url("/login"))
 
         self.response.out.write("<html><body>%s</body></html>" % greeting)
+
+class Import(webapp.RequestHandler):
+	def get(self):
+		fs = get_fs_from_account()
+		
+		friends = fs.friends()
+		
+		#self.response.out.write('friends: %s' % friends)
+		
+		self.response.out.write("<h1>Your friends are:</h1>")
+      
+		#get the people checked in
+		for friend in friends['friends']:
+			#self.response.out.write("%s" % friend)
+			self.response.out.write("<img src = %s> %s " % (friend['photo'],  friend['firstname']))
+			if 'lastname' in friend:
+			  self.response.out.write("%s" % friend['lastname'])
+			
+			query = db.GqlQuery("SELECT * FROM Foursquare WHERE fsid = :1 ", friend['id'])
+			result = query.fetch(1)
+			
+			if (result):
+				self.response.out.write("<a href='/msg?uid=%s'>Message</a>" % 5)
+				#results[pkey])
+			
+			
+			#check their relationship. 3 options 
+			# 1 - full friend, fs and fsb'
+			# 2 - fs friend - invite to fsb
+			# 3 - non friend - invite to both? just fsb would be better, but maybe not possible.  for now, no link.
+			
+			self.response.out.write("</br>")
         
 class Venues(webapp.RequestHandler):
   def get(self):
@@ -199,7 +231,7 @@ class Venues(webapp.RequestHandler):
     
 #    obj = json.loads(venues)
     
-    #self.response.out.write('venues: %s' % venues)
+    self.response.out.write('venues: %s' % venues)
     
     #self.response.out.write('object: %s' % obj)
     
@@ -397,7 +429,8 @@ application = webapp.WSGIApplication([('/authorize', Authorize),
                                       ('/venues', Venues),
                                       ('/member', Member),
                                       ('/checkin', Checkin),
-                                      ('/equip', EquipData)],
+                                      ('/equip', EquipData),
+									  ('/import', Import)],
                                      debug = True
                                      )
 									 
